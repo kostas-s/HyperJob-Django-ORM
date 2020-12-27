@@ -9,3 +9,7 @@ class Resume(models.Model):
 
 def get_resumes():
     return Resume.objects.all()
+
+
+def make_resume(author, description):
+    Resume.objects.create(description=description, author=author)

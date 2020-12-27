@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'menu',
     'signup',
     'login',
+    'post',
 ]
 
 MIDDLEWARE = [

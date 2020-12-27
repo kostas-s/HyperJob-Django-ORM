@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Vacancy</title>
+</head>
+<body>
+    <h2>New Vacancy Post</h2>
+    <br>
+    <form method="post", action=""> {% csrf_token %}
+        <label for="description">Description:</label>
+        <textarea name="description", id="description" rows="20" cols="80" maxlength="1024"></textarea>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

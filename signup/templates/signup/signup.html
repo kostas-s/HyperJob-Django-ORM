@@ -5,6 +5,8 @@
     <title>Sign Up</title>
 </head>
 <body>
+    <h2>Sign Up:</h2>
+    <br>
     <form method="post" action="">{% csrf_token %}
         <table>{{ form.as_table }}</table>
         <button type="submit">Submit</button>

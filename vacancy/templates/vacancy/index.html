@@ -5,6 +5,8 @@
     <title>Vacancies</title>
 </head>
 <body>
+    <h2>Vacancy List:</h2>
+    <br>
     {% for vacancy in vacancies %}
     <div>{{ vacancy.author.username }}: {{ vacancy.description }}</div>
     {% endfor %}

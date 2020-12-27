@@ -5,6 +5,8 @@
     <title>Resumes</title>
 </head>
 <body>
+    <h2>Resume List:</h2>
+    <br>
     {% for resume in resumes %}
     <div>{{ resume.author.username }}: {{ resume.description }}</div>
     {% endfor %}

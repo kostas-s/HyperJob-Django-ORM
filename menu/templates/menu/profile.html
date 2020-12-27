@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+</head>
+<body> {% csrf_token %}
+    <h2>Profile Page</h2>
+    <br>
+    <p>Username: {{ user.username }}</p>
+    <p>Is Admin: {{ user.is_staff }}</p>
+    <br>
+    <a href="logout">Logout User</a><br>
+    <a href="resume/new">Post Resume</a><br>
+    {% if user.is_staff %}
+    <a href="vacancy/new">Post Vacancy</a><br>
+    {% else %}
+    <a href="upgrade_user">Upgrade to Staff</a><br>
+    {% endif %}
+    <a href="/">Go Back</a><br>
+</body>
+</html>

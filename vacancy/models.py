@@ -11,8 +11,5 @@ def get_vacancies():
     return Vacancy.objects.all()
 
 
-def make_entry():
-    u = User(username="ksmonos")
-    u.save()
-    v = Vacancy(description="Typical Job Description", author=u)
-    v.save()
+def make_entry(author, description):
+    Vacancy.objects.create(author=author, description=description)
